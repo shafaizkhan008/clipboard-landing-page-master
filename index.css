@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+  --font-family: 'Bai Jamjuree', sans-serif;
+}
+
+
+p{
+  color: var(--Grayish-Blue);
+  font-family: var(--font-family);
+  font-weight:  400;
+}
+
+h1{
+  font-family: var(--font-family);
+  font-weight: 600;
+  color: var(--Dark-Grayish-Blue);
+}
+
+a{
+  text-decoration: none;
+  color: var(--Grayish-Blue);
+  font-family: var(--font-family);
+  font-weight:  400;
+}
+
+.start{
+background-image: url(./images/bg-header-desktop.png);
+background-repeat: no-repeat;
+background-position: cover;
+}
+
+
+.start1,
+.two,
+.supercharge,
+.clipart {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
+}
+.start{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.ro {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 100%;
+  margin-top: 40px;
+}
+
+.computer-img{
+  width: 50%;
+}
+.computer-img img{
+  width: 90%;
+  transform: translateX(-30px);
+}
+
+.main-text{
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  /* background-color: #b9c20a; */
+}
+
+:where(.main-text) > div {
+  margin: 30px 0;
+}
+
+.start1 h1 {
+  margin: 20px 0;
+}
+.two{
+  margin-top: 40px;
+}
+
+.three {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.three img{
+  margin-top: 30px;
+  width: 50%;
+}
+
+.three h1{
+  margin: 10px 0;
+}
+
+.create{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: calc(100% / 3 - 5%);
+  padding: 10px;
+  /* background-color: aqua; */
+}
+
+.create .img{
+  padding: 20px;
+}
+.create-text h1{
+  padding: 15px;
+}
+
+.heading{
+  padding: 20px;
+}
+.heading h1{
+  margin: 20px 0;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.sub-charge {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  text-align: center;
+}
+.brands{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.supercharge{
+  margin-top: 10px;
+}
+
+.ios button  {
+background-color: var( --Strong-Cyan);
+border: 0;
+border-radius: 100px;
+box-sizing: border-box;
+color: #ffffff;
+font-size: 16px;
+font-weight: 300;
+max-width: 480px;
+min-height: 40px;
+border: none;
+padding: 0 20px;
+box-shadow: 4px 4px 4px 0px hsla(171, 66%, 44%, 0.494);
+}
+.mac button  {
+background-color: var(--Light-Blue);
+border: 0;
+border-radius: 100px;
+box-sizing: border-box;
+color: #ffffff;
+font-size: 16px;
+font-weight: 300;
+max-width: 480px;
+min-height: 40px;
+padding: 0 20px;
+}
+
+footer{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+background: rgb(245, 243, 243);
+height: 100px;
+}
+
+.f-links{
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+width: 60%;
+}
+
+.link{
+display: flex;
+justify-content: start;
+align-items: flex-start;
+flex-direction: column;
+}
+
+.f-logo , .f-sm {
+width: 20%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.f-logo img{
+width: 60px;
+}
+
+.f-sm{
+  gap: 20px;
+}
+
+.link {
+width: 60%;
+/* flex-direction: start; */
+}
+
+.clipart {
+  margin: 30px 0;
+}
+
+.clip-text{
+  margin: 30px 0;
+}
+.clip-text h1{
+  margin: 30px 0;
+}
+
+
+@media (max-width:600px){
+ footer,.ro,.btn,.brands,.sub-charge,.f-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .computer-img img{
+    width: 100%;
+    transform: translateX(0px);
+  }
+  .google img{
+  margin: 25px 0;
+ }
+ .ibm img{
+  margin: 25px 0;
+ }
+ .microsoft img{
+  margin: 25px 0;
+ }
+ .hewlett img{
+  margin: 25px 0; 
+ }
+ .vector img{
+  margin: 25px 0;
+ }
+ /* .link a{
+  padding: 10px 0;
+ } */
+ h1 {
+  font-size: larger;
+ }
+}
